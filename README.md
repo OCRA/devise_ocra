@@ -1,3 +1,5 @@
+*Work in progress*
+
 # DeviseOcra
 
 TODO: Write a gem description

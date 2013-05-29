@@ -1,13 +1,13 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'devise_ocra/version'
+require 'ocra/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "devise_ocra"
-  spec.version       = DeviseOcra::VERSION
+  spec.version       = Ocra::VERSION
   spec.authors       = ["Phil Hofmann", "Simon Huerlimann"]
-  spec.email         = ["phil@branch14.org", "sim@panter.ch"]
+  spec.email         = ["phil@branch14.org", "simon.huerlimann@cyt.ch"]
   spec.description   = %q{An OCRA integration for devise}
   spec.summary       = %q{An OCRA integration for devise}
   spec.homepage      = ""
@@ -22,4 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
 
   spec.add_dependency "rocra", "~> 0.0.1"
+  spec.add_dependency "devise", "~> 2.2.3"
 end
